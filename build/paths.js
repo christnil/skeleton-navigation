@@ -1,7 +1,7 @@
 var path = require('path');
 
-var appRoot = 'src/';
-var outputRoot = 'dist/';
+var appRoot = 'client/';
+var outputRoot = 'public/';
 
 module.exports = {
   root: appRoot,
