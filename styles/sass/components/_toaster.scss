@@ -1,0 +1,59 @@
+%toaster-base {
+  border: $toaster-border-width solid transparent;
+  border-radius: $toaster-border-radius;
+  margin-bottom: $toaster-margin-bottom;
+  padding: $toaster-padding;
+  width: $toaster-width;
+
+  &:hover {
+    box-shadow: 0 0 3px $default-toaster-shadow-color;
+  }
+}
+
+.toaster-success {
+  @extend %toaster-base;
+  background-color: $toaster-success-background-color;
+  border-color: $toaster-success-border-color;
+  color: $toaster-success-color;
+}
+
+.toaster-info {
+  @extend %toaster-base;
+  background-color: $toaster-info-background-color;
+  border-color: $toaster-info-border-color;
+  color: $toaster-info-color;
+}
+
+.toaster-warning {
+  @extend %toaster-base;
+  background-color: $toaster-warning-background-color;
+  border-color: $toaster-warning-border-color;
+  color: $toaster-warning-color;
+}
+
+.toaster-error {
+  @extend %toaster-base;
+  background-color: $toaster-error-background-color;
+  border-color: $toaster-error-border-color;
+  color: $toaster-error-color;
+}
+
+.notifications {
+  bottom: 15px;
+  position: fixed;
+  right: 15px;
+  width: $toaster-width + $toaster-border-width;
+  z-index: 500;
+}
+
+.notification {
+  animation-duration: 1s;
+  animation-name: fadeIn;
+  opacity: 1;
+
+  &.removed {
+    animation-duration: 1s;
+    animation-name: fadeOut;
+    opacity: 0;
+  }
+}

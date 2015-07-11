@@ -1,0 +1,39 @@
+section {
+  margin: 0 20px;
+
+  // animate page transitions
+  &.au-enter-active {
+    animation: fadeInRight 1s;
+  }
+}
+
+.navbar-nav.loader {
+  margin: 12px 24px 0 6px;
+}
+
+.picture-detail {
+  max-width: 425px;
+}
+
+// animate flickr image entry
+.au-stagger {
+  // 50ms will be applied between each successive enter operation
+  animation-delay: 50ms;
+}
+
+.flickr-img {
+  &.au-enter {
+    opacity: 0;
+  }
+
+  &.au-enter-active {
+    animation: fadeIn 2s;
+  }
+
+  > a {
+    > img {
+      height: 180px;
+      width: 260px;
+    }
+  }
+}
